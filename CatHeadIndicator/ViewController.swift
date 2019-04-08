@@ -19,11 +19,11 @@ class ViewController: UIViewController {
 class View : UIView {
     
     let movingCircle = CAShapeLayer()
+    let startCircle = CAShapeLayer()
     
     override func draw(_ rect: CGRect) {
         super.draw(rect)
         
-        let startCircle = CAShapeLayer()
         startCircle.backgroundColor = UIColor.black.cgColor
         startCircle.bounds = CGRect(x: 0, y: 0, width: 7, height: 7)
         startCircle.position = CGPoint(x: 2, y: 0)
@@ -42,7 +42,6 @@ class View : UIView {
         super.awakeFromNib()
         let catHead = UIBezierPath()
         catHead.move(to: CGPoint(x: 2, y: 0))
-//        catHead.addArc(withCenter: CGPoint(x: 4, y: 0), radius: 2, startAngle: .pi, endAngle: .pi*2, clockwise: true)
         catHead.addLine(to: CGPoint(x: 22, y: 30))
         catHead.addLine(to: CGPoint(x: 62, y: 30))
         catHead.addLine(to: CGPoint(x: 80, y: 2))
