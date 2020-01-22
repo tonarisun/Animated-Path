@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041A0C9223CC8A7D0020903E /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041A0C9123CC8A7D0020903E /* LoadingView.swift */; };
+		041A0C9823CDC6F90020903E /* CatHead.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041A0C9723CDC6F90020903E /* CatHead.swift */; };
+		04AD824A23D6B52300387EF3 /* CheckMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD824923D6B52300387EF3 /* CheckMark.swift */; };
 		D650D06A22560D330062A74D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D650D06922560D320062A74D /* AppDelegate.swift */; };
 		D650D06C22560D330062A74D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D650D06B22560D330062A74D /* ViewController.swift */; };
 		D650D06F22560D330062A74D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D650D06D22560D330062A74D /* Main.storyboard */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		041A0C9123CC8A7D0020903E /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		041A0C9723CDC6F90020903E /* CatHead.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatHead.swift; sourceTree = "<group>"; };
+		04AD824923D6B52300387EF3 /* CheckMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckMark.swift; sourceTree = "<group>"; };
 		D650D06622560D320062A74D /* CatHeadIndicator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatHeadIndicator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D650D06922560D320062A74D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D650D06B22560D330062A74D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +69,9 @@
 				D650D07522560D390062A74D /* LaunchScreen.storyboard */,
 				D650D07822560D390062A74D /* Info.plist */,
 				D650D07022560D330062A74D /* CatHeadIndicator.xcdatamodeld */,
+				041A0C9123CC8A7D0020903E /* LoadingView.swift */,
+				041A0C9723CDC6F90020903E /* CatHead.swift */,
+				04AD824923D6B52300387EF3 /* CheckMark.swift */,
 			);
 			path = CatHeadIndicator;
 			sourceTree = "<group>";
@@ -139,6 +148,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D650D06C22560D330062A74D /* ViewController.swift in Sources */,
+				041A0C9823CDC6F90020903E /* CatHead.swift in Sources */,
+				041A0C9223CC8A7D0020903E /* LoadingView.swift in Sources */,
+				04AD824A23D6B52300387EF3 /* CheckMark.swift in Sources */,
 				D650D06A22560D330062A74D /* AppDelegate.swift in Sources */,
 				D650D07222560D330062A74D /* CatHeadIndicator.xcdatamodeld in Sources */,
 			);
@@ -287,7 +299,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TF56ZZML3P;
+				DEVELOPMENT_TEAM = 4XJM4GSZPH;
 				INFOPLIST_FILE = CatHeadIndicator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

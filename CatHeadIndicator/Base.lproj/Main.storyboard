@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,28 +13,66 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CatHeadIndicator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gkC-sv-ZnH" customClass="View" customModule="CatHeadIndicator" customModuleProvider="target">
-                                <rect key="frame" x="165" y="397" width="84" height="102"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6LI-XP-LW1" customClass="LoadingView" customModule="CatHeadIndicator" customModuleProvider="target">
+                                <rect key="frame" x="137.5" y="50" width="100" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Pp1-CP-wxV"/>
+                                    <constraint firstAttribute="height" constant="100" id="diw-WC-tV3"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gkC-sv-ZnH" customClass="CatHead" customModule="CatHeadIndicator" customModuleProvider="target">
+                                <rect key="frame" x="145.5" y="185" width="84" height="102"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="102" id="mO6-Qw-Kg3"/>
                                     <constraint firstAttribute="width" constant="84" id="q79-1f-uQZ"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v5n-kP-L21" customClass="CheckMark" customModule="CatHeadIndicator" customModuleProvider="target">
+                                <rect key="frame" x="137.5" y="322" width="100" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="qLv-M2-K8z"/>
+                                    <constraint firstAttribute="width" constant="100" id="um4-LG-Ajh"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnH-3v-5p5">
+                                <rect key="frame" x="158.5" y="627" width="58" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="REPEAT">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="repeatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3ok-CY-WAx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.70096534489999995" green="0.92958825830000003" blue="0.83528417349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="gkC-sv-ZnH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9BN-Oi-Nnj"/>
+                            <constraint firstItem="6LI-XP-LW1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7eB-iw-IO8"/>
+                            <constraint firstItem="v5n-kP-L21" firstAttribute="top" secondItem="gkC-sv-ZnH" secondAttribute="bottom" constant="35" id="B28-Xh-nKk"/>
+                            <constraint firstItem="dnH-3v-5p5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Esu-5R-Ve6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dnH-3v-5p5" secondAttribute="bottom" constant="10" id="L5J-fd-bJA"/>
+                            <constraint firstItem="v5n-kP-L21" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="O4f-eu-XmZ"/>
+                            <constraint firstItem="gkC-sv-ZnH" firstAttribute="top" secondItem="6LI-XP-LW1" secondAttribute="bottom" constant="35" id="P3Q-Uf-qO0"/>
                             <constraint firstItem="gkC-sv-ZnH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PSd-Cj-KTn"/>
+                            <constraint firstItem="6LI-XP-LW1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="utp-Ur-Org"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="catHead" destination="gkC-sv-ZnH" id="Dda-PW-Edp"/>
+                        <outlet property="checkMark" destination="v5n-kP-L21" id="j0B-BV-KgF"/>
+                        <outlet property="circle" destination="6LI-XP-LW1" id="TZt-gO-Xwv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="88.392857142857139"/>
         </scene>
     </scenes>
 </document>
